@@ -7,7 +7,7 @@ Download from [Github](https://github.com/YaroslavFedan/yii2-multilanguage).
 
 **Composer**
 ```
-composer require "composer require dongrim/language"
+composer require dongrim/language
 ```
 
 
