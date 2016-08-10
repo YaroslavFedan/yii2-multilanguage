@@ -3,18 +3,18 @@ Installation
 
 ####Download:
 
-Download from [Github](https://almsaeedstudio.com).
+Download from [Github](https://github.com/YaroslavFedan/yii2-multilanguage).
 
 **Composer**
 ```
-composer require "almasaeed2010/adminlte=~2.0"
+composer require "composer require dongrim/language"
 ```
 
 
 Подключаем модуль
 ```
 'language' => [
-    'class' => 'app\modules\language\Module',
+    'class' => 'dongrim\language\Module',
     //'customWidgetView' => '/views'
 ],
 ```
@@ -22,7 +22,7 @@ composer require "almasaeed2010/adminlte=~2.0"
 Database migrations
 --------
 ```
-php yii migrate/up --migrationPath=@app/modules/language/migrations
+php yii migrate/up --migrationPath=@dongrim/language/migrations
 ```
 
 
@@ -41,7 +41,7 @@ Config
 
 ```
 'urlManager' => [
-    'class'=>'app\modules\language\components\LangUrlManager',
+    'class'=>'dongrim\language\components\LangUrlManager',
     ...
 ]
 ```
@@ -49,7 +49,7 @@ Config
 
 ```
 'request' => [
-    'class' => 'app\modules\language\components\LangRequest'
+    'class' => 'dongrim\language\components\LangRequest'
     ...  
 ],
 ```
@@ -58,6 +58,6 @@ Usage
 --------
 
 ```
-use app\modules\language\widgets\WLang;
+use dongrim\language\widgets\WLang;
 <?= WLang::widget();?>
 ```
