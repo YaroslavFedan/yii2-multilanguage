@@ -10,7 +10,6 @@ class LanguageAsset extends AssetBundle
 
     public $css = [
         'css/lang.css',
-        '//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'
     ];
 
     public $js = [];
