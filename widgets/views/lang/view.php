@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Html;
+use \iutbay\yii2-fontawesome\FontAwesomeAsset::register($this);
 ?>
 <li class="dropdown">
     <a class="dropdown-toggle language" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
